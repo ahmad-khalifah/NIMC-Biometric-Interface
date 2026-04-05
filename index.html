@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Compliant Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-layout">
+        <h1 class="app-title">Identity Photo Compliant Scanner</h1>
+        
+        <div class="app-wrapper">
+            <div class="camera-column">
+                <div class="scanner-container">
+                    <video id="webcam-video" autoplay playsinline></video>
+                    <canvas id="overlay-canvas"></canvas>
+                    <canvas id="hidden-canvas" style="display: none;"></canvas>
+                    <div class="scanner-guide"></div>
+                </div>
+                <button id="capture-btn" disabled>Capture Live Photo</button>
+            </div>
+
+            <div class="checklist-panel">
+                <h2>Biometric Status</h2>
+                <ul id="icao-checklist">
+                    <li id="face_centered" class="failed"><span class="status-dot"></span> Face Centered</li>
+                    <li id="correct_pose" class="failed"><span class="status-dot"></span> Correct Pose</li>
+                    <li id="eyes_open" class="failed"><span class="status-dot"></span> Eyes Open</li>
+                    <li id="mouth_closed" class="failed"><span class="status-dot"></span> Mouth Closed</li>
+                    <li id="neutral_expression" class="failed"><span class="status-dot"></span> Neutral Expression</li>
+                    <li id="even_lighting" class="failed"><span class="status-dot"></span> Even Lighting</li>
+                    <li id="plain_background" class="failed"><span class="status-dot"></span> Plain Background</li>
+                    <li id="no_obstructions" class="failed"><span class="status-dot"></span> No Obstructions</li>
+                    <li id="sharp_focus" class="failed"><span class="status-dot"></span> Sharp Focus</li>
+                    <li id="good_contrast" class="failed"><span class="status-dot"></span> Good Contrast</li>
+                </ul>
+                
+                <input type="file" id="file-upload" accept="image/jpeg, image/png" style="display: none;">
+                <button id="upload-btn" class="secondary-btn">Upload Saved Photo</button>
+            </div>
+        </div>
+    </div>   
+    <script src="script.js"></script>
+</body>
+</html>

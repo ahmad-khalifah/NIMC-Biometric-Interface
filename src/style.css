@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #eef2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.app-title {
+    margin: 0;
+    font-size: 24px; /* Shrunk from 28px */
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+}
+
+.app-wrapper {
+    display: flex;
+    gap: 30px; /* Shrunk from 40px */
+    background: #ffffff;
+    padding: 30px; /* Shrunk from 40px */
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.scanner-container {
+    width: 280px;     /* Shrunk from 350px */
+    height: 360px;    /* Shrunk from 450px to perfectly keep the 7:9 ratio */
+    position: relative;
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 280px; /* Must match the new 280px scanner width exactly */
+}
+
+/* Ensure the secondary button matches the new layout */
+.secondary-btn {
+    padding: 14px;
+    background: #f4f4f5;
+    color: #333;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+/* Panel Typography and Layout */
+.checklist-panel {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #1a1a1a;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+li {
+    padding: 8px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #666;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+/* Glowing Status Dots */
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* State: Failed (Red) */
+li.failed { color: #555; }
+li.failed .status-dot {
+    background-color: #ff4d4f;
+    box-shadow: 0 0 8px rgba(255, 77, 79, 0.5);
+}
+
+/* State: Passed (Green) */
+li.passed { color: #1a1a1a; }
+li.passed .status-dot {
+    background-color: #52c41a;
+    box-shadow: 0 0 8px rgba(82, 196, 26, 0.5);
+}
+
+/* Modern Button */
+button {
+    margin-top: 20px;
+    padding: 14px;
+    background: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+button:disabled {
+    background: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.secondary-btn {
+    padding: 14px;
+    background: #f4f4f5;
+    color: #333;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.secondary-btn:hover {
+    background: #e5e7eb;
+}

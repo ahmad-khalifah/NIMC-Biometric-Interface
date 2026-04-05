@@ -1,3 +1,4 @@
+HEAD
 # NIMC Biometric Verification Pipeline
 
 A frontend architecture and data pipeline designed for real-time biometric spoof-detection. This system captures image data via HTML5 Canvas and transmits it securely to a remote machine learning backend.
@@ -15,3 +16,9 @@ In strict adherence to the Nigeria Data Protection Regulation (NDPR) and general
 2. **Process:** Frame is drawn to an HTML5 Canvas and encoded to Base64.
 3. **Transmit:** Payload is sent via WebSockets to the Python ML server.
 4. **Validate:** JSON response triggers UI state changes based on spoof-detection results.
+
+# NIMC Biometric Interface (Dummy Data Demo)
+
+A front-end pipeline interface for identity photo compliance scanning. 
+
+**Disclaimer:** This project incorporates an ICAO compliance model licensed strictly for educational and research purposes. This repository is a technical demonstration of biometric pipeline integration and is not intended for commercial deployment or monetization. All image data included in the `dummy` dataset folder consists of stock test cases and does not contain real biometric data 053cfcd (Initial commit: Biometric scanner UI and structured dataset)

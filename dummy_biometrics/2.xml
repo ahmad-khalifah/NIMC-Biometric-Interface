@@ -1,0 +1,26 @@
+<annotation>
+	<folder>dummy_biometrics</folder>
+	<filename>3c5be2f34cff8bdc25e9571c5ff1bdfe.jpg</filename>
+	<path>C:\Users\lenovo\Downloads\dummy_biometrics\3c5be2f34cff8bdc25e9571c5ff1bdfe.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>compliant</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>49</xmin>
+			<ymin>20</ymin>
+			<xmax>582</xmax>
+			<ymax>497</ymax>
+		</bndbox>
+	</object>
+</annotation>
